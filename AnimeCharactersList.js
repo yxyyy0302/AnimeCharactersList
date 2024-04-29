@@ -204,7 +204,6 @@ async function api() {
     try {
         const response = await fetch(url, options);
         const result = await response.json();
-        console.log(result);
         return `"${result.content}" -- ${result.originator.name}`;
     } catch (error) {
         console.error(error);
