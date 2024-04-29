@@ -2,6 +2,7 @@ const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
 const { MongoClient, ServerApiVersion } = require('mongodb');
+let portNumber = 5000;
 
 const app = express();
 
@@ -26,14 +27,8 @@ const client = new MongoClient(uri, {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 process.stdin.setEncoding("utf8");
-if (process.argv.length != 3) {
-    process.stdout.write("node AnimeCharacterList.js PORT_NUMBER_HERE");
-    process.exit(1);
-}
-let portNumber = process.argv[2];
+
 app.listen(portNumber);
-console.log(`Web server is running at http://localhost:${portNumber}`);
-console.log("Type stop to shutdown the server");
 
 process.stdin.on('readable', () => {
     let input = process.stdin.read();
@@ -127,10 +122,6 @@ app.post("/processAddCharacter", (request, response) => {
 
 app.post("/processSearchCharacter", (request, response) => {
     const requestedName = request.body.name;
-    let name;
-    let gender;
-    let age;
-    let anime;
 
     async function main() {
         try {
@@ -138,20 +129,6 @@ app.post("/processSearchCharacter", (request, response) => {
             let result = await lookUpCharacter(client, databaseAndCollection, requestedName);
             if (!result) {
                 return response.status(404).render("error", { message: "This character does not exist!" });
-            }
-            if (result) {
-                if (result["name"] != "") {
-                    name = result["name"];
-                }
-                if (result["gender"] != "") {
-                    gender = result["gender"];
-                }
-                if (result["age"] != "") {
-                    age = result["age"];
-                }
-                if (result["anime"] != "") {
-                    anime = result["anime"];
-                }
             }
 
             const variables = {
