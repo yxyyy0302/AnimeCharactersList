@@ -11,8 +11,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set("view engine", "ejs");
 
 require("dotenv").config({ path: path.resolve(__dirname, 'env/.env') })
-const username = process.env.MONGO_DB_username;
-const password = process.env.MONGO_DB_PASSWORD;
 const DB = "yxy0302";
 const collection = "animeCharacterList";
 const uri = "mongodb+srv://yxy0302:JuiKxDoDYOUvBEJo@cluster0.8s90j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
