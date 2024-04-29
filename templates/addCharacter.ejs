@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Add Character</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+
+  <body class = "main">
+    <%- include('header') %>
+
+    <h1 style = "margin-top:30px; margin-bottom:10px;">Add Your Character</h1>
+
+    <form action="/processAddCharacter" method="post">
+      <fieldset>
+        <label
+          ><strong >Name: </strong><br><input type="text" name="name" required
+        /></label><br><br>
+        <label
+          ><strong>Gender: </strong
+          ><br><input type="text" name="gender" required
+        /></label>
+        <br /><br />
+        <label
+          ><strong>Age: </strong><br><input type="text" name="age" required
+        /></label><br><br>
+
+        <label
+          ><strong>Anime: </strong><br><input type="text" name="anime" required
+        /></label>
+      </fieldset>
+      <br /><br>
+      <input type="reset" style="font-weight: bold;" value = "Clear"/><br><br>
+      <input type="submit" style="font-weight: bold;" value = "Add"/>
+    </form>
+  </body>
+  
+</html>

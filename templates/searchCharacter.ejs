@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Search For a Character</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+
+  <body class = "main">
+    <%- include('header') %>
+    <h1 style = "margin-top: 30px; margin-bottom:10px;">Search For a Character:</h1>
+    <form action="/processSearchCharacter" method="post">
+        <fieldset>
+          <label
+            ><strong style = "font-size:20px">Name:</strong>
+            <input type="text" name="name" style = "margin-top:20px;" required/></label
+          ><br />
+          <br />
+        </fieldset>
+        <br />
+        <input type="reset"style="font-weight: bold;"  value = "Clear"/><br><br>
+        <input type="submit" value="Search" style="font-weight: bold;" />
+      </form>
+  </body>
+
+</html>
+
+

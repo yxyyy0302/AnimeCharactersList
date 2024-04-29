@@ -1,0 +1,145 @@
+*{
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+ .center{
+    text-align: center;
+  }
+
+  .image-container {
+    text-align: center;
+}
+
+.image-container img {
+    display: inline-block; 
+}
+  
+  body{
+    background-color: rgb(252, 235, 243);
+    ;
+  }
+
+  body,h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+
+  h1{
+    font-size:40px;
+  }
+
+  h1,
+  h2,
+  h3{
+    text-align:center;
+  }
+  
+  .character {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  
+
+  form{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+  }
+
+  .review{
+    background-image:url('https://images6.alphacoders.com/133/1330710.png');
+    background-size:cover;
+ 
+   
+  }
+
+  .main{
+    background-image: url('https://wallpapers.com/images/hd/simple-anime-qvr19zmur82jyryl.jpg');
+   background-size: cover;
+  }
+  
+  #menu {
+    background: rgb(140, 4, 63);
+    color: white;
+    padding: 10px;
+  }
+  
+  #menu h1 {
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-block;
+  }
+  
+  #menu ul {
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 6px 0;
+  }
+  
+  #menu li {
+    float: right;
+    margin-left: 20px;
+    font-size:20px;
+  }
+  
+  #menu a {
+    color: white;
+  }
+  
+  main {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+  }
+  
+  label{
+    font-size:20px;
+  }
+  
+ #quote{
+  background-color: rgb(255,255,255,0.5);
+  background-size: 50px 50px;
+ }
+  
+button,
+  input {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width:500px;
+    cursor: pointer;
+    color: black;
+    border: 0;
+    box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.1);
+    font-size: 18px;
+  }
+  
+  .error{
+    background-image:url('https://images.hdqwalls.com/wallpapers/love-live-sunshine-404-error-4k-wo.jpg');
+    background-size: cover;
+  }
+
+  
+
+  table{
+    background-color: rgb(255,255,255,0.5);
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+  }
+ 
+ 
+
+ 
+  
+  

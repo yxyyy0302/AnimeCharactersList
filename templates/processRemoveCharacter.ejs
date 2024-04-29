@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Removed Character</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+
+  <body class = "main">
+    <%- include('header') %>
+    <audio id="player">
+        <source src="toPacifyHTMLValidator" type="audio/mpeg">
+    </audio>
+
+    <h1 style = "margin-top:30px; margin-bottom:10px;">Character Removed</h1>
+    <div class = "center">
+      <h2>Character <%- removed %> has been removed from the list.</h2><br>
+
+      
+      <hr>
+      <div id = "quote">
+     <br><h2 >An unrelated quote for the day:</h2>
+     
+     <h2 ><%= quote %> </h2><br>
+
+      </div>
+
+     
+</div>
+  </body>
+  
+</html>
