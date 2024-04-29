@@ -29,6 +29,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 process.stdin.setEncoding("utf8");
 
 app.listen(portNumber);
+console.log(`Web server started and running at http://localhost:${portNumber}`);
+process.stdout.write("Type stop to shutdown the server: ");
 
 process.stdin.on('readable', () => {
     let input = process.stdin.read();
