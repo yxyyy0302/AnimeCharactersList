@@ -13,9 +13,9 @@ app.set("view engine", "ejs");
 require("dotenv").config({ path: path.resolve(__dirname, 'env/.env') })
 const username = process.env.MONGO_DB_username;
 const password = process.env.MONGO_DB_PASSWORD;
-const DB = process.env.MONGO_DB_NAME;
-const collection = process.env.MONGO_COLLECTION;
-const uri = `mongodb+srv://${username}:${password}@cluster0.8s90j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const DB = "yxy0302";
+const collection = "animeCharacterList";
+const uri = "mongodb+srv://yxy0302:JuiKxDoDYOUvBEJo@cluster0.8s90j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const databaseAndCollection = { db: DB, collection: collection };
 const client = new MongoClient(uri, {
     serverApi: {
