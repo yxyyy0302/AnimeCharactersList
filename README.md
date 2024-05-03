@@ -6,7 +6,7 @@ App Description: Allow users to see a list of anime characters, add their own ch
 
 YouTube Video Link: 
 
-APIs: VideoApp (http:notrealvideoapp.what), SoundApp (http:notreadlsoundapp.what)
+APIs: Quotes (https://rapidapi.com/martin.svoboda/api/quotes15/)
 
 Contact Email: carriey170720@gmail.com
 
