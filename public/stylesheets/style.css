@@ -35,15 +35,6 @@
     text-align:center;
   }
   
-  .character {
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin-left: 5px;
-    color: white;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-
   
 
   form{
@@ -94,12 +85,6 @@
     color: white;
   }
   
-  main {
-    background: white;
-    width: 80%;
-    margin: 30px auto;
-    border-radius: 10px;
-  }
   
   label{
     font-size:20px;
