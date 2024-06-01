@@ -13,3 +13,7 @@ APIs: Quotes (https://rapidapi.com/martin.svoboda/api/quotes15/)
 Contact Email: carriey170720@gmail.com
 
 Website Link: https://animecharacterslist.onrender.com
+
+# 6/1/2024
+
+Updated UI
