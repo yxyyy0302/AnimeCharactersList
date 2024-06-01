@@ -2,6 +2,11 @@
     font-family: 'Trebuchet MS', sans-serif;
   }
 
+  .center a {
+    text-decoration: none;
+}
+
+
  .center{
     text-align: center;
   }
@@ -12,11 +17,12 @@
 
 .image-container img {
     display: inline-block; 
-}
+    width: 38%;
+    height: auto;
+  }
   
   body{
     background-color: rgb(252, 235, 243);
-    ;
   }
 
   body,h1,
