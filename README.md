@@ -1,3 +1,5 @@
+# AnimeCharactersList
+
 Submitted by: Xinyu Yang (directory id: yxy0302)
 
 Group Members: Xinyu Yang (yxy0302), Hted Oo (hoo)
