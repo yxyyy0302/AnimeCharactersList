@@ -13,6 +13,7 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "finalproject": "file:",
     "mongodb": "^6.5.0",
     "mongoose": "^8.1.2"
   }

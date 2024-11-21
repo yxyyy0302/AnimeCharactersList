@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 require("dotenv").config({ path: path.resolve(__dirname, 'env/.env') })
 const DB = "yxy0302";
 const collection = "animeCharacterList";
-const uri = "mongodb+srv://yxy0302:JuiKxDoDYOUvBEJo@cluster0.8s90j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = `mongodb+srv://yxy0302:Yxy20040302@cluster0.8s90j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const databaseAndCollection = { db: DB, collection: collection };
 const client = new MongoClient(uri, {
     serverApi: {
@@ -181,7 +181,7 @@ async function insertCharacter(client, databaseAndCollection, newApplicant) {
     await client.db(databaseAndCollection.db).collection(databaseAndCollection.collection).insertOne(newApplicant);
 }
 async function lookUpCharacter(client, databaseAndCollection, requestedName) {
-    let filter = { name: { $eq: requestedName } };
+    let filter = { name: {$regex: new RegExp(`^${requestedName}$`, 'i') } };
     const result = await client.db(databaseAndCollection.db)
         .collection(databaseAndCollection.collection)
         .findOne(filter);
