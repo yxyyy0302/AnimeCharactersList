@@ -2,7 +2,7 @@
 
 Submitted by: Xinyu Yang (directory id: yxy0302)
 
-Group Members: Xinyu Yang (yxy0302), Hted Oo (hoo)
+Group Members: Xinyu Yang (directory id: yxy0302), Hted Oo (directory id: hoo)
 
 App Description: Allows users to see a list of anime characters, add their own characters, search for specific characters, and remove characters.
 
