@@ -6,7 +6,7 @@ Group Members: Xinyu Yang (directory id: yxy0302), Hted Oo (directory id: hoo)
 
 App Description: Allows users to see a list of anime characters, add their own characters, search for specific characters, and remove characters.
 
-YouTube Video Link: https://www.youtube.com/watch?v=RXazl8a6a5I
+[YouTube Video Link]: https://www.youtube.com/watch?v=RXazl8a6a5I
 
 APIs: Quotes (https://rapidapi.com/martin.svoboda/api/quotes15/)
 
